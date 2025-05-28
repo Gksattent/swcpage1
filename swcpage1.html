@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example</title>
+  <title> Example </title>
   <style>
     
 
     .container, .about-container, .contact-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 10px;
       justify-content: center;
-      padding: 20px;
+      padding: 10px;
     }
 
     .image1 {
@@ -47,35 +47,55 @@
       color: #333;
     }
 
-    .contact-box {
-      flex: 1 1 45%;
-      padding: 10px;
+    .contact-box, .container{
+      flex: 100%;
+      padding: 1px;
+      border: 1px solid #ccc;
+      border-radius: 1px;
+      text-align:left;
+    }
+	.about-container{
+	flex: 100%;
+      padding: 25px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      text-align: center;
+}
+
+	.contact-container{
+      flex: 100%;
+      padding: 5px;
       border: 1px solid #ccc;
       border-radius: 10px;
       text-align: center;
+	border-padding :10px;
     }
-
-    .contact-box h2 {
-      margin-bottom: 10px;
+	
+    .contact-box h1 {
+      margin-bottom: 5px;
     }
 
     .contact-box p {
       margin: 0;
-      font-size: 16px;
+      font-size: 1px;
     }
+.end.img {
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 
 <body>
-  <!-- Front Image -->
+  
   <div class="front img">
     <img src="https://www.w3schools.com/w3images/architect.jpg" >
   </div>
 
-  <!-- Projects Section -->
+  
   <h1>Projects</h1>
   <div class="container">
-    <!-- 8 Project Images -->
+    
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/house5.jpg" >
       <h1>Summer House</h1>
@@ -93,7 +113,7 @@
       <h1>Barn House</h1>
     </div>
 
-    <!-- Row 2 -->
+   
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/house4.jpg" >
       <h1>Brick House</h1>
@@ -112,7 +132,7 @@
     </div>
   </div>
 
-  <!-- About Section -->
+  
   <h1>About</h1>
   <p class="about-text">
     This section showcases a few key architectural styles that reflect both modern and traditional design influences.
@@ -122,22 +142,46 @@
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/team2.jpg">
       <h1>John Doe</h1>
+	<p class ="about-text " >
+	founder and ceo
+	</p>
+	<buttton class ="about-container" >contact</button>
+	
     </div>
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/team1.jpg">
       <h1>Jane Joe</h1>
+	<p class ="about-text " >
+	Architect
+	</p>
+	<buttton class ="about-container" >contact</button>
+
+
+
     </div>
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/team3.jpg">
       <h1>Mike Ross</h1>
+	<p class ="about-text " >
+	Architect
+	</p>
+	<buttton class ="about-container" >contact</button>
+
+
     </div>
     <div class="image1">
       <img src="https://www.w3schools.com/w3images/team4.jpg">
       <h1>Dane Star</h1>
+	<p class ="about-text " >
+	Architect
+	</p>
+	<buttton class ="about-container" >contact</button>
+
+
     </div>
   </div>
 
-  <!-- Contact Section -->
+
   <h1>Contact</h1>
   <p class="contact-text">
     We’d love to hear from you! Whether you’re interested in a new project, have questions, or just want to connect,
@@ -160,11 +204,25 @@
       <h2>Social</h2>
       
     </div>
+
+<div>
+<div class= "contact-send message">
+
+</div>
+
+<buttton class ="contact-container" >SEND MESSAGE</button>
+
+	
+
   </div>
 
-  <!-- Ending Full-Width Image -->
+</div>
+
+
   <div class="end img">
     <img src="https://www.w3schools.com/w3images/map.jpg">
+
   </div>
+
 </body>
 </html>
